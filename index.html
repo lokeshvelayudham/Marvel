@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Hunter </title>
+
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,600;0,900;1,100;1,200;1,300;1,800&display=swap"
+          rel="stylesheet">
+
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+		<link
+        rel="shortcut icon"
+        href="./assets/images/favicon-logo.png"
+        type="image/x-icon"
+    />
+
+    <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+    <!-- External CSS  -->
+    <link rel="stylesheet" href="src/css/styles.css">
+
+
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+  <center>
+    <header>
+        <ul>
+         <li><a class="links" href="./fav.html"><button class="favbutton" type="button">Favourites</button></a></li>
+           <li><a href="#grid"><img class="grid" src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png" title="Google apps"></a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#gmail">Gmail</a></li>
+          </ul>  
+    </header>
+    <div class="logo">
+        <a href=""><img src="https://cdn.cdnlogo.com/logos/m/99/marvel-studios.svg"></a>
+      <!-- <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> -->
+    </div>
+
+<!-- Search bar  -->
+    <div class="bar">
+      <input class="searchbar"  id="search-bar" autocomplete="off" type="text" title="Search" placeholder="Search for SuperHeros" >
+      <a href="#"> <img class="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
+    </div>
+
+
+    <div class="buttons">
+      <button class="button" type="button">Marvel Search</button>
+      <button class="button" type="button">I'm Feeling Lucky</button>
+     </div>
+     <div id="search-results">
+     <ul class="flex-col" id="search-results">
+        <!-- Structure of the data that is added using DOM manipulation -->
+        <!-- <li class="flex-row single-search-result">
+             <div class="flex-row img-info">
+                  <img src="${hero.thumbnail.path+'/portrait_medium.' + hero.thumbnail.extension}" alt="">
+                  <div class="hero-info">
+                       <a class="character-info" href="./heros.html">
+                            <span class="hero-name">${hero.name}</span>
+                       </a>
+                  </div>
+             </div>
+             <div class="flex-col buttons">
+                  <button class="btn add-to-fav-btn">${favouritesCharacterIDs.has(`${hero.id}`) ? "<i class=\"fa-solid fa-heart-circle-minus\"></i> &nbsp; Remove from Favourites" :"<i class=\"fa-solid fa-heart fav-icon\"></i> &nbsp; Add to Favourites</button>"}
+             </div>
+             <div style="display:none;">
+                  <span>${hero.name}</span>
+                  <span>${hero.description}</span>
+                  <span>${hero.comics.available}</span>
+                  <span>${hero.series.available}</span>
+                  <span>${hero.stories.available}</span>
+                  <span>${hero.thumbnail.path+'/portrait_uncanny.' + hero.thumbnail.extension}</span>
+                  <span>${hero.id}</span>
+                  <span>${hero.thumbnail.path+'/landscape_incredible.' + hero.thumbnail.extension}</span>
+                  <span>${hero.thumbnail.path+'/standard_fantastic.' + hero.thumbnail.extension}</span>
+             </div>
+        </li> -->
+   </ul>
+</div>
+
+
+
+    <!-- Crypto JS -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+          integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- External Js -->
+    <script src="src/js/script.js"></script>
+
+    <!-- bootstrap css  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
